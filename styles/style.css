@@ -5,23 +5,36 @@
 }
 
 body{
-    background: radial-gradient(circle, hsla(202, 78%, 49%, 1) 0%, hsla(211, 100%, 12%, 1) 100%);    background-size: cover;
+    background: radial-gradient(circle, hsla(202, 70%, 39%, 1) 0%, hsla(211, 100%, 12%, 1) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.header-container{
-    display: block;
+.header__container{
+    padding: 35px 95px 0px 55px;
+}
+
+.header__menu{
     width: 100%;
-    margin-top: 35px;
+    display: flex;
+}
+
+.container__Jeanpaul{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-decoration: none;
 }
 
 
 .header-menu-options{
     display: flex;
-    justify-content: center;
     align-items: center;
     list-style: none;
     gap: 70px;
 }
+
+
 
 .header-menu-item{
     display: flex;
@@ -32,7 +45,7 @@ body{
     font-size: 16px;
     font-weight: 800;
     text-decoration: none;
-    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .header-menu-options:hover li {
@@ -80,13 +93,67 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 120px;
-    background-color: #FFC300;
-    border-radius: 50%;
-    margin-bottom: 0px;
+    margin: 180px 0px 180px 0px;
 }
 
-.angles__down{
-    width: 120px;
-    height: 120px;
+.about__container{
+}
+
+.about__container_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.about__container_title h3{
+    color: #ccd6f6;
+    font-size: 70px;
+}
+
+.about__container_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+
+.container__circle{
+    display: flex;
+    width: 230px;
+    height: 230px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #003566;
+    
+}
+
+.about__container_img img{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    border: 2px solid #1B98E0;
+}
+
+.about__container_description{
+    text-align: center;
+}
+
+.about__subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #ccd6f6;
+}
+
+.about__subtitle--description{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 20px 170px 80px 170px;
+
 }
