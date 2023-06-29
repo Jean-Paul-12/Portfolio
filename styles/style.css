@@ -5,9 +5,7 @@
 }
 
 body{
-    background: radial-gradient(circle, hsla(202, 70%, 39%, 1) 0%, hsla(211, 100%, 12%, 1) 100%);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: #001D3D;
 }
 
 .header__container{
@@ -43,7 +41,7 @@ body{
     text-align: center;
     color: #ccd6f6;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 600;
     text-decoration: none;
     letter-spacing: 1px;
 }
@@ -93,7 +91,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 180px 0px 180px 0px;
+    margin: 260px 0px 180px 0px;
 }
 
 .about__container{
