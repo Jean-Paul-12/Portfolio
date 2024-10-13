@@ -28,28 +28,37 @@ body{
 }
 
 .profile{
-    width: 100%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-top: 120px;
+    gap: 30px;
 }
 
 .profile img{
-    height: 150px;
-    width: 150px;
-
+    height: 180px;
+    width: 180px;
+    
 }
 
-.profile-tittle-name{
+.profile__tittle__name{
     letter-spacing: 2px;
     color: #7da0ca;
     font-size: 30px;
     font-weight: 500;
 }
-.profile-tittle-name-sd{
-    font-size: 15px;
+.profile__tittle__name--pd{
+    font-size: 17px;
+}
+
+.profile__location{
+    display: flex;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+.profile__tittle__name--co{
+    font-size: 12px;
 }
 
 .highlight{
@@ -58,9 +67,119 @@ body{
     letter-spacing: 3px;
 }
 
-.profile__social{
+.download__cv{
+    gap: 5px;
     display: flex;
-    justify-content: space-around;
-    padding-top: 25px;
+    align-items: center;
+    justify-content: center;
+    background-color: #052659;
+    color: #c1e8ff;
+    width: 140px;
+    height: 30px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
+.download__cv:hover{
+    background: #c1e8ff;
+    color: #052659;
+}
+
+.profile__social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    gap: 50px;
+}
+
+.information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 0px 35px 0px;
+}
+
+.about__container{
+    width: 640px;
+    padding: 0px 20px 0px 220px;
+}
+
+.about__me{
+    margin-bottom: 30px;
+}
+
+.highlight--about{
+    font-size: 25px;
+    color: #c1e8ff;
+    font-weight: 600;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.about__text{
+    font-size: 15px;
+    color: #7da0ca;
+}
+
+hr{
+    border-color: #052659;
+}
+
+.about__me--skills{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 30px 0px 15px 0px;
+}
+
+.about__skills{
+    font-size: 17px;
+    color: #c1e8ff;
+    letter-spacing: 2px;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
+.backend__skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 13px;
+    color: #c1e8ff;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin: 15px 0px 20px 0px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    width: 110px;
+    gap: 10px;
+}
+
+.cards img{
+    width: 80px;
+    height: 80px;
+}
+
+.cards--docker img{
+    width: 140px;
+}
+
+.cards:hover {
+    border: solid 2px;
+    border-radius: 10px;
+    border-color: #052659;
+}
+
+
+.cards--gcp img{
+    width: 100px;
+}
