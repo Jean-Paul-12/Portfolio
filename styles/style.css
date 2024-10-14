@@ -8,6 +8,15 @@ body{
     background: #021024;
 }
 
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: #052659;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #7da0ca;
+}
+
 .header__container{
     padding: 25px 0px 25px 60px;
     
@@ -103,7 +112,7 @@ body{
 
 .about__container{
     width: 640px;
-    padding: 0px 20px 0px 220px;
+    padding: 0px 20px 0px 130px;
 }
 
 .about__me{
@@ -159,6 +168,7 @@ hr{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 2px solid transparent;
     height: 130px;
     width: 110px;
     gap: 10px;
@@ -174,12 +184,42 @@ hr{
 }
 
 .cards:hover {
-    border: solid 2px;
+    border: 2px solid #052659;
     border-radius: 10px;
-    border-color: #052659;
+    background-color: #c1e8ff;
+    color: #052659;
+    font-weight: 600;
 }
-
 
 .cards--gcp img{
     width: 100px;
+}
+
+.container__footer{
+    margin: 100px 0px 10px 0px;
+}
+
+
+
+.footer__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 25px;
+}
+
+.download__cv--footer{
+    width: 40px;
+    height: 30px;
+    
+}
+
+.footer__info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7da0ca;
+    font-weight: 500;
+    font-size: 12px;
 }
