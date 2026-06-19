@@ -2,7 +2,7 @@
 
 Portafolio personal de **Jean Paul Quitian**, Ingeniero de Software y Desarrollador Backend Python especializado en automatización con IA.
 
-**Sitio en vivo:** [devjeanpaul.com](https://devjeanpaul.com)
+**Sitio en vivo:** [jeanp-quitian.vercel.app](https://jeanp-quitian.vercel.app)
 
 ---
 
@@ -58,6 +58,10 @@ python -m http.server 8080
 
 Abre [http://localhost:8080](http://localhost:8080) en tu navegador.
 
+## Despliegue
+
+El sitio está publicado en [Vercel](https://jeanp-quitian.vercel.app).
+
 ## Estructura del proyecto
 
 ```
@@ -70,7 +74,6 @@ Portfolio/
 ├── components/
 │   ├── img/            # Imágenes y logos
 │   └── cv/             # CV descargable (gitignored)
-└── CNAME               # Dominio personalizado
 ```
 
 ---
