@@ -574,6 +574,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 24px;
+    max-width: 640px;
 }
 
 .project-card {
@@ -646,6 +647,12 @@ body {
     border: 1px solid var(--border);
 }
 
+.project-card__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+}
+
 .project-card__link {
     display: inline-flex;
     align-items: center;
@@ -654,10 +661,15 @@ body {
     text-decoration: none;
     font-size: 0.88rem;
     font-weight: 600;
-    transition: gap var(--transition);
+    transition: gap var(--transition), color var(--transition);
 }
 
-.project-card__link:hover {
+.project-card__link--secondary {
+    color: var(--text-secondary);
+}
+
+.project-card__link:hover,
+.project-card__link--secondary:hover {
     gap: 12px;
     color: var(--text-primary);
 }
