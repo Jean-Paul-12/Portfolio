@@ -5,22 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Jean Paul Quitian — Desarrollador Backend Python especializado en automatización con IA, APIs REST, Docker y Cloud.">
-    <meta property="og:title" content="Jean Paul Quitian | Python Backend & IA Engineer">
+        content="Jean Paul Quitian — Ingeniero de Software (Backend & AI Engineering). Agentes, MCP, RAG, APIs y Cloud.">
+    <meta property="og:title" content="Jean Paul Quitian | Software Engineer & IA Engineer">
     <meta property="og:description"
-        content="Desarrollador backend en Python. Automatización con IA, OpenAI, Django, Docker y Cloud.">
+        content="Ingeniero de Software enfocado en backend, agentes de IA, workflows y automatización con LLMs.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://jeanp-quitian.vercel.app">
-    <meta property="og:image" content="https://jeanp-quitian.vercel.app/components/img/profile.jpg">
-    <link rel="icon" href="components/img/2130-removebg-preview.png" type="image/png">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <meta property="og:image" content="https://jeanp-quitian.vercel.app/components/img/logo-jp.jpg">
+    <link rel="icon" href="components/img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="components/img/favicon-180.png">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/6cd17e1f2f.js" crossorigin="anonymous"></script>
-    <title>Jean Paul Quitian | Python Backend & IA Engineer</title>
+    <title>Jean Paul Quitian | Software Engineer & IA Engineer</title>
 </head>
 
 <body>
@@ -28,445 +29,351 @@
         <canvas id="neural-bg"></canvas>
     </div>
 
-    <header class="header">
-        <nav class="header__nav">
-            <a href="#inicio" class="header__logo">Jean P.</a>
-            <button class="header__toggle" aria-label="Abrir menú" aria-expanded="false">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <ul class="header__menu">
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
     <main>
         <section id="inicio" class="hero">
-            <div class="hero__photo" data-aos="fade-right">
-                <img src="components/img/profile.jpg" alt="Jean Paul Quitian — Ingeniero de Software">
-            </div>
-            <div class="hero__content" data-aos="fade-left">
-                <span class="hero__badge"><i class="fa-solid fa-circle"></i> Disponible para oportunidades</span>
-                <p class="hero__greeting">Hola, soy</p>
-                <h1 class="hero__name">Jean Paul <span class="highlight">Quitian</span></h1>
-                <h2 class="hero__role">
-                    <span class="hero__role-text">Python Backend Developer</span>
-                    <span class="hero__separator">|</span>
-                    <span class="hero__role-text hero__role-text--accent">IA Engineer</span>
-                </h2>
-                <div class="hero__location">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <span>Bogotá, Colombia</span>
-                </div>
-                <div class="hero__stats">
-                    <div class="stat">
-                        <span class="stat__number">3+</span>
-                        <span class="stat__label">Años de exp.</span>
+            <div class="hero__layout">
+                <div class="hero__copy">
+                    <p class="hero__eyebrow"><span class="pulse"></span> Disponible · Bogotá, CO</p>
+                    <h1 class="hero__title">
+                        Jean Paul<br>
+                        <span class="hero__title-accent">Quitian</span>
+                    </h1>
+                    <p class="hero__rotate-wrap">
+                        <span class="hero__rotate-line" aria-live="polite">
+                            <span id="role-rotate" class="hero__rotate"></span><span class="hero__rotate-cursor"
+                                aria-hidden="true"></span>
+                        </span>
+                    </p>
+                    <p class="hero__pitch">
+                        Ingeniero de Software en backend e IA: agentes, MCP, RAG y APIs que llevan automatización real
+                        a producción.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="#contacto" class="btn btn--primary">Hablemos</a>
+                        <a href="#proyectos" class="btn btn--ghost">Ver proyectos</a>
                     </div>
-                    <div class="stat">
-                        <span class="stat__number">3</span>
-                        <span class="stat__label">Empresas</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat__number">IA</span>
-                        <span class="stat__label">Automatización</span>
-                    </div>
-                </div>
-                <div class="hero__actions">
-                    <a href="#contacto" class="btn btn--primary">
-                        <i class="fa-solid fa-paper-plane"></i> Contáctame
-                    </a>
-                    <a href="components/cv/CV Jean Paul Quitian.pdf" download class="btn btn--outline">
-                        <i class="fa-solid fa-download"></i> CV
-                    </a>
-                    <a href="https://github.com/Jean-Paul-12" target="_blank" rel="noopener noreferrer"
-                        class="btn btn--icon" aria-label="GitHub">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/jean-paul-12qg/" target="_blank" rel="noopener noreferrer"
-                        class="btn btn--icon" aria-label="LinkedIn">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="sobre-mi" class="section">
-            <div class="container">
-                <h2 class="section__title" data-aos="fade-up">Sobre mí</h2>
-                <p class="about__text" data-aos="fade-up" data-aos-delay="100">
-                    Desarrollador backend en Python enfocado en automatización con IA. Experiencia en integraciones
-                    con OpenAI, APIs REST, Docker y bases de datos relacionales, así como en automatización de procesos
-                    con herramientas como n8n, SharePoint y Airtable. Interesado en roles de backend, AI automation
-                    y Cloud.
-                </p>
-                <div class="about__highlights" data-aos="fade-up" data-aos-delay="200">
-                    <article class="highlight-card">
-                        <i class="fa-solid fa-robot"></i>
-                        <h3>Automatización IA</h3>
-                        <p>Integración de OpenAI y LLMs en flujos empresariales con Python.</p>
-                    </article>
-                    <article class="highlight-card">
-                        <i class="fa-solid fa-server"></i>
-                        <h3>Backend sólido</h3>
-                        <p>APIs REST con Django, bases de datos relacionales y arquitectura escalable.</p>
-                    </article>
-                    <article class="highlight-card">
-                        <i class="fa-solid fa-shield-halved"></i>
-                        <h3>DevOps & Cloud</h3>
-                        <p>Docker, CI/CD, DevSecOps y despliegue en Azure y AWS.</p>
-                    </article>
-                </div>
-                <div class="about__languages" data-aos="fade-up" data-aos-delay="300">
-                    <div class="language-tag">
-                        <i class="fa-solid fa-language"></i>
-                        <span><strong>Español</strong> — Nativo</span>
-                    </div>
-                    <div class="language-tag">
-                        <i class="fa-solid fa-language"></i>
-                        <span><strong>Inglés</strong> — B1 (Lectura técnica)</span>
+                    <div class="hero__quick">
+                        <a href="components/cv/CV Jean Paul Quitian.pdf" download class="btn btn--outline">
+                            <i class="fa-solid fa-file-arrow-down"></i> CV
+                        </a>
+                        <a href="https://github.com/Jean-Paul-12" target="_blank" rel="noopener noreferrer"
+                            class="btn btn--outline">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/jean-paul-12qg/" target="_blank" rel="noopener noreferrer"
+                            class="btn btn--outline">
+                            <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="experiencia" class="section section--alt">
-            <div class="container">
-                <h2 class="section__title" data-aos="fade-up">Experiencia</h2>
-                <div class="timeline">
-                    <article class="timeline__item" data-aos="fade-up">
-                        <div class="timeline__marker"></div>
-                        <div class="timeline__card">
-                            <span class="timeline__date">2025 — Actual</span>
-                            <h3 class="timeline__role">AI Automation</h3>
-                            <p class="timeline__company">GeoPark</p>
-                            <p class="timeline__desc">
-                                Diseño e implemento automatizaciones con IA para distintas áreas de la empresa,
-                                integrando OpenAI vía API con backends en Python para reducir tareas manuales y
-                                acelerar flujos internos.
-                            </p>
-                            <div class="timeline__tags">
-                                <span>OpenAI</span><span>Python</span><span>n8n</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="timeline__item" data-aos="fade-up">
-                        <div class="timeline__marker"></div>
-                        <div class="timeline__card">
-                            <span class="timeline__date">2024 — 2025</span>
-                            <h3 class="timeline__role">Desarrollador Python</h3>
-                            <p class="timeline__company">Periferia IT Group</p>
-                            <p class="timeline__desc">
-                                Desarrollo de soluciones backend con Python y Django. Construcción y uso de APIs
-                                RESTful. Gestión de bases de datos relacionales, versionado con Git y colaboración
-                                en entornos ágiles con SCRUM.
-                            </p>
-                            <div class="timeline__tags">
-                                <span>Django</span><span>REST API</span><span>PostgreSQL</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="timeline__item" data-aos="fade-up">
-                        <div class="timeline__marker"></div>
-                        <div class="timeline__card">
-                            <span class="timeline__date">2023 — 2024</span>
-                            <h3 class="timeline__role">DevOps Jr.</h3>
-                            <p class="timeline__company">Periferia IT Group</p>
-                            <p class="timeline__desc">
-                                Automatización de procesos de desarrollo e implementación con Docker. Implementación
-                                de las mejores prácticas de DevSecOps, integrando la seguridad en pipelines de CI/CD
-                                y entornos de nube (Azure).
-                            </p>
-                            <div class="timeline__tags">
-                                <span>Docker</span><span>CI/CD</span><span>Azure</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="proyectos" class="section">
-            <div class="container">
-                <h2 class="section__title" data-aos="fade-up">Proyectos destacados</h2>
-                <p class="section__subtitle" data-aos="fade-up" data-aos-delay="50">
-                    Proyectos desplegados y disponibles en GitHub.
-                </p>
-                <div class="projects-grid">
-                    <article class="project-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="project-card__header">
-                            <i class="fa-solid fa-cloud-sun-rain project-card__icon"></i>
-                            <span class="project-card__type">Full Stack</span>
-                        </div>
-                        <h3>Fleet Connection Advisor</h3>
-                        <p>
-                            Dashboard web para inteligencia de inversión en flota impulsada por el clima.
-                            Evalúa el impacto meteorológico en couriers, visualiza KPIs financieros,
-                            recomendaciones ejecutivas y ubicación geográfica por ciudad.
+                <aside class="hero__console-stage" aria-label="Señales técnicas">
+                    <p class="hero__panel-title">agent.session</p>
+                    <div class="hero__console" id="agent-console" aria-live="polite">
+                        <ul class="hero__console-log" id="console-log"></ul>
+                        <p class="hero__console-active">
+                            <span class="hero__console-prompt">&gt;</span>
+                            <span id="console-typed"></span><span class="hero__cursor" aria-hidden="true"></span>
                         </p>
-                        <div class="project-card__tags">
-                            <span>React</span><span>Vite</span><span>Recharts</span><span>Leaflet</span><span>Vercel</span>
-                        </div>
-                        <div class="project-card__links">
-                            <a href="https://fleet-connection-advisor-view.vercel.app/" target="_blank"
-                                rel="noopener noreferrer" class="project-card__link">
-                                Ver demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-                            <a href="https://github.com/Jean-Paul-12/Fleet_Connection_Advisor_View" target="_blank"
-                                rel="noopener noreferrer" class="project-card__link project-card__link--secondary">
-                                GitHub <i class="fa-brands fa-github"></i>
-                            </a>
-                        </div>
-                    </article>
-                </div>
+                    </div>
+                    <p class="hero__panel-foot">// agents · workflows · llm ops</p>
+                </aside>
             </div>
         </section>
 
-        <section id="habilidades" class="section section--alt">
+        <section id="sobre-mi" class="section section-reveal">
             <div class="container">
-                <h2 class="section__title" data-aos="fade-up">Habilidades</h2>
-
-                <div class="skills-group" data-aos="fade-up">
-                    <h3 class="skills-group__title"><i class="fa-solid fa-server"></i> Backend & APIs</h3>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <img src="components/img/logo_python.png" alt="Python">
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-card">
-                            <img src="components/img/django-icon.svg" alt="Django">
-                            <span>Django</span>
-                        </div>
-                        <div class="skill-card skill-card--icon">
-                            <i class="fa-solid fa-plug"></i>
-                            <span>REST APIs</span>
-                        </div>
-                        <div class="skill-card">
-                            <img src="components/img/logo_postgres.png" alt="PostgreSQL">
-                            <span>PostgreSQL</span>
-                        </div>
-                        <div class="skill-card skill-card--icon">
-                            <i class="fa-solid fa-database"></i>
-                            <span>MySQL</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills-group" data-aos="fade-up">
-                    <h3 class="skills-group__title"><i class="fa-solid fa-robot"></i> IA & Automatización</h3>
-                    <div class="skills-grid">
-                        <div class="skill-card skill-card--icon">
-                            <i class="fa-solid fa-robot"></i>
-                            <span>OpenAI / GPT</span>
-                        </div>
-                        <div class="skill-card skill-card--icon">
-                            <i class="fa-solid fa-sparkles"></i>
-                            <span>Claude</span>
-                        </div>
-                        <div class="skill-card skill-card--icon">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i>
-                            <span>Cursor</span>
-                        </div>
-                        <div class="skill-card skill-card--icon">
-                            <i class="fa-solid fa-brain"></i>
-                            <span>LLM</span>
-                        </div>
-                        <div class="skill-card skill-card--icon">
-                            <i class="fa-solid fa-diagram-project"></i>
-                            <span>n8n</span>
-                        </div>
-                        <div class="skill-card skill-card--icon">
-                            <i class="fa-brands fa-microsoft"></i>
-                            <span>SharePoint</span>
-                        </div>
-                        <div class="skill-card skill-card--icon">
-                            <i class="fa-solid fa-table"></i>
-                            <span>Airtable</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills-group" data-aos="fade-up">
-                    <h3 class="skills-group__title"><i class="fa-solid fa-cloud"></i> DevOps & Cloud</h3>
-                    <div class="skills-grid">
-                        <div class="skill-card skill-card--docker">
-                            <img src="components/img/logo_docker.png" alt="Docker">
-                            <span>Docker</span>
-                        </div>
-                        <div class="skill-card skill-card--icon">
-                            <i class="fa-solid fa-code-branch"></i>
-                            <span>CI/CD</span>
-                        </div>
-                        <div class="skill-card skill-card--icon">
-                            <i class="fa-brands fa-github"></i>
-                            <span>GitHub</span>
-                        </div>
-                        <div class="skill-card">
-                            <img src="components/img/logo_aws.png" alt="AWS">
-                            <span>AWS</span>
-                        </div>
-                        <div class="skill-card">
-                            <img src="components/img/logo_azure.png" alt="Azure">
-                            <span>Azure</span>
-                        </div>
-                        <div class="skill-card skill-card--icon">
-                            <i class="fa-solid fa-bolt"></i>
-                            <span>Vercel</span>
-                        </div>
-                        <div class="skill-card skill-card--icon">
-                            <i class="fa-solid fa-cloud"></i>
-                            <span>IaC</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skills-group" data-aos="fade-up">
-                    <h3 class="skills-group__title"><i class="fa-solid fa-palette"></i> Frontend</h3>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <img src="components/img/logo_html.png" alt="HTML">
-                            <span>HTML</span>
-                        </div>
-                        <div class="skill-card">
-                            <img src="components/img/logo_css.png" alt="CSS">
-                            <span>CSS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="educacion" class="section">
-            <div class="container">
-                <h2 class="section__title" data-aos="fade-up">Educación & Certificaciones</h2>
-                <div class="edu-grid">
-                    <article class="edu-card" data-aos="fade-up">
-                        <i class="fa-solid fa-graduation-cap edu-card__icon"></i>
-                        <div>
-                            <h3>Ingeniería de Software</h3>
-                            <p class="edu-card__place">Politécnico Grancolombiano</p>
-                            <span class="edu-card__date">2023 — 2026</span>
-                        </div>
-                    </article>
-                    <article class="edu-card" data-aos="fade-up">
-                        <i class="fa-solid fa-graduation-cap edu-card__icon"></i>
-                        <div>
-                            <h3>Análisis y Desarrollo de Sistemas de Información</h3>
-                            <p class="edu-card__place">SENA</p>
-                            <span class="edu-card__date">2020 — 2022</span>
-                        </div>
-                    </article>
-                    <article class="edu-card edu-card--cert" data-aos="fade-up">
-                        <i class="fa-solid fa-certificate edu-card__icon"></i>
-                        <div>
-                            <h3>PCEP — Programming Essentials in Python</h3>
-                            <p class="edu-card__place">Python Institute</p>
-                        </div>
-                    </article>
-                    <article class="edu-card edu-card--cert" data-aos="fade-up">
-                        <i class="fa-solid fa-certificate edu-card__icon"></i>
-                        <div>
-                            <h3>Bootcamp Arquitectura en la Nube</h3>
-                            <p class="edu-card__place">Bogotá Institute of Technology (BIT)</p>
-                        </div>
-                    </article>
-                    <article class="edu-card edu-card--cert" data-aos="fade-up">
-                        <i class="fa-solid fa-certificate edu-card__icon"></i>
-                        <div>
-                            <h3>Diplomado en Ciencias de la Computación</h3>
-                            <p class="edu-card__place">Politécnico Grancolombiano</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section class="cta" data-aos="zoom-in">
-            <div class="container cta__inner">
-                <div>
-                    <h2>¿Trabajamos juntos?</h2>
-                    <p>Estoy abierto a roles de backend, automatización con IA y proyectos cloud.</p>
-                </div>
-                <a href="#contacto" class="btn btn--primary btn--lg">
-                    <i class="fa-solid fa-envelope"></i> Hablemos
-                </a>
-            </div>
-        </section>
-
-        <section id="contacto" class="section section--alt">
-            <div class="container">
-                <h2 class="section__title" data-aos="fade-up">Contacto</h2>
-                <p class="contact__intro" data-aos="fade-up" data-aos-delay="50">
-                    ¿Tienes un proyecto o quieres conectar? Escríbeme por cualquiera de estos medios.
+                <header class="section__head">
+                    <span class="section__index">01</span>
+                    <h2 class="section__title">Sobre mí</h2>
+                </header>
+                <p class="lead">
+                    Ingeniero de Software enfocado en Backend y AI Engineering. Experiencia con Python, APIs REST,
+                    agentes de IA, MCP, tools, RAG y automatización de workflows. Desarrollo e integración de
+                    soluciones basadas en modelos de IA con buenas prácticas y arquitecturas backend. Interesado en
+                    Backend, AI Automation y Cloud.
                 </p>
-                <div class="contact__grid">
-                    <a href="mailto:j.guillen.0612@gmail.com" class="contact__item contact__item--wide" data-aos="fade-up"
-                        data-aos-delay="100">
-                        <i class="fa-solid fa-envelope"></i>
-                        <span class="contact__text">j.guillen.0612@gmail.com</span>
-                    </a>
-                    <a href="tel:+573124541612" class="contact__item" data-aos="fade-up" data-aos-delay="150">
-                        <i class="fa-solid fa-phone"></i>
-                        <span class="contact__text">(+57) 312 454 1612</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/jean-paul-12qg/" target="_blank" rel="noopener noreferrer"
-                        class="contact__item" data-aos="fade-up" data-aos-delay="200">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                        <span class="contact__text">LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/Jean-Paul-12" target="_blank" rel="noopener noreferrer"
-                        class="contact__item" data-aos="fade-up" data-aos-delay="250">
-                        <i class="fa-brands fa-github"></i>
-                        <span class="contact__text">GitHub</span>
-                    </a>
-                    <a href="components/cv/CV Jean Paul Quitian.pdf" download class="contact__item" data-aos="fade-up"
-                        data-aos-delay="300">
-                        <i class="fa-solid fa-file-pdf"></i>
-                        <span class="contact__text">Descargar CV</span>
-                    </a>
+                <ul class="pill-list">
+                    <li><strong>Español</strong> — Nativo</li>
+                    <li><strong>Inglés</strong> — B1 (lectura técnica)</li>
+                </ul>
+                <div class="bento">
+                    <article class="bento__wide">
+                        <span class="bento__tag">Perfil</span>
+                        <h3>Software Engineer · IA</h3>
+                        <p>De la API al agente: integro LLMs, orquesto workflows y despliego soluciones con MCP, RAG y
+                            backends en Python.</p>
+                    </article>
+                    <article>
+                        <span class="bento__tag">01</span>
+                        <h3>Automatización IA</h3>
+                        <p>Agentic AI, OpenAI, Claude, n8n y flujos con LLMs.</p>
+                    </article>
+                    <article>
+                        <span class="bento__tag">02</span>
+                        <h3>Backend</h3>
+                        <p>Django, FastAPI, REST, PostgreSQL y arquitectura escalable.</p>
+                    </article>
+                    <article>
+                        <span class="bento__tag">03</span>
+                        <h3>DevOps</h3>
+                        <p>Docker, CI/CD, Azure, AWS y Vercel.</p>
+                    </article>
                 </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="section section-reveal">
+            <div class="container">
+                <header class="section__head">
+                    <span class="section__index">02</span>
+                    <h2 class="section__title">Experiencia</h2>
+                </header>
+                <div class="exp-list">
+                    <article class="exp-row">
+                        <div class="exp-row__meta">
+                            <time>2025 — Actual</time>
+                            <span class="exp-row__company">GeoPark</span>
+                        </div>
+                        <div class="exp-row__body">
+                            <h3>AI Automation</h3>
+                            <p>Diseño e implemento automatizaciones con IA, integrando OpenAI vía API con backends en
+                                Python para reducir tareas manuales y acelerar flujos internos.</p>
+                            <div class="tags"><span>OpenAI</span><span>Python</span><span>n8n</span></div>
+                        </div>
+                    </article>
+                    <article class="exp-row">
+                        <div class="exp-row__meta">
+                            <time>2024 — 2025</time>
+                            <span class="exp-row__company">Periferia IT Group</span>
+                        </div>
+                        <div class="exp-row__body">
+                            <h3>Desarrollador Python</h3>
+                            <p>Backend con Python y Django, APIs RESTful, bases de datos relacionales, Git y SCRUM.</p>
+                            <div class="tags"><span>Django</span><span>REST API</span><span>PostgreSQL</span></div>
+                        </div>
+                    </article>
+                    <article class="exp-row">
+                        <div class="exp-row__meta">
+                            <time>2023 — 2024</time>
+                            <span class="exp-row__company">Periferia IT Group</span>
+                        </div>
+                        <div class="exp-row__body">
+                            <h3>DevOps Jr.</h3>
+                            <p>Automatización con Docker, DevSecOps, pipelines CI/CD y entornos en Azure.</p>
+                            <div class="tags"><span>Docker</span><span>CI/CD</span><span>Azure</span></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="section section-reveal">
+            <div class="container">
+                <header class="section__head">
+                    <span class="section__index">03</span>
+                    <h2 class="section__title">Proyectos</h2>
+                </header>
+                <p class="section__note">Demos en vivo y código abierto en <a
+                        href="https://github.com/Jean-Paul-12?tab=repositories" target="_blank"
+                        rel="noopener noreferrer">GitHub</a>.</p>
+                <div class="project-list">
+                    <article class="project-row">
+                        <div class="project-row__top">
+                            <h3>BIA Agent Platform</h3>
+                            <span class="project-row__type">Full Stack · IA</span>
+                        </div>
+                        <p>Plataforma para crear, publicar y observar agentes con Agent Builder, chat, trazas y API
+                            Python. Stack React + TypeScript + Groq/Tavily.</p>
+                        <div class="tags"><span>React</span><span>TypeScript</span><span>Python</span><span>LLM</span><span>Vercel</span>
+                        </div>
+                        <div class="project-row__links">
+                            <a href="https://bia-agent-platform-web.vercel.app/" target="_blank"
+                                rel="noopener noreferrer">Demo</a>
+                            <a href="https://github.com/Jean-Paul-12/bia-agent-platform-web" target="_blank"
+                                rel="noopener noreferrer">Web</a>
+                            <a href="https://github.com/Jean-Paul-12/bia-agent-platform-api" target="_blank"
+                                rel="noopener noreferrer">API</a>
+                        </div>
+                    </article>
+                    <article class="project-row">
+                        <div class="project-row__top">
+                            <h3>Fleet Connection Advisor</h3>
+                            <span class="project-row__type">Full Stack</span>
+                        </div>
+                        <p>Dashboard de inteligencia de inversión en flota según clima: KPIs, mapas, recomendaciones y
+                            API Flask con persistencia.</p>
+                        <div class="tags"><span>React</span><span>Flask</span><span>Recharts</span><span>Leaflet</span><span>Vercel</span>
+                        </div>
+                        <div class="project-row__links">
+                            <a href="https://fleet-connection-advisor-view.vercel.app/" target="_blank"
+                                rel="noopener noreferrer">Demo</a>
+                            <a href="https://github.com/Jean-Paul-12/Fleet_Connection_Advisor_View" target="_blank"
+                                rel="noopener noreferrer">Frontend</a>
+                            <a href="https://github.com/Jean-Paul-12/Fleet_Connection_Advisor" target="_blank"
+                                rel="noopener noreferrer">Backend</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section section-reveal">
+            <div class="container">
+                <header class="section__head">
+                    <span class="section__index">04</span>
+                    <h2 class="section__title">Habilidades</h2>
+                </header>
+                <div class="skills-grid">
+                    <article class="skill-panel">
+                        <header class="skill-panel__head">
+                            <i class="fa-solid fa-server"></i>
+                            <h3>Backend & APIs</h3>
+                        </header>
+                        <ul class="skill-panel__list">
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>FastAPI</li>
+                            <li>REST APIs</li>
+                            <li>PostgreSQL</li>
+                            <li>MySQL</li>
+                        </ul>
+                    </article>
+                    <article class="skill-panel">
+                        <header class="skill-panel__head">
+                            <i class="fa-solid fa-robot"></i>
+                            <h3>IA & Automatización</h3>
+                        </header>
+                        <ul class="skill-panel__list">
+                            <li>Agentic AI</li>
+                            <li>OpenAI API</li>
+                            <li>Claude</li>
+                            <li>LLM · RAG</li>
+                            <li>MCP · A2A</li>
+                            <li>n8n</li>
+                        </ul>
+                    </article>
+                    <article class="skill-panel">
+                        <header class="skill-panel__head">
+                            <i class="fa-solid fa-cloud"></i>
+                            <h3>DevOps & Cloud</h3>
+                        </header>
+                        <ul class="skill-panel__list">
+                            <li>Docker</li>
+                            <li>CI/CD</li>
+                            <li>GitHub</li>
+                            <li>AWS</li>
+                            <li>Azure</li>
+                            <li>Vercel</li>
+                            <li>IaC</li>
+                        </ul>
+                    </article>
+                    <article class="skill-panel">
+                        <header class="skill-panel__head">
+                            <i class="fa-solid fa-code"></i>
+                            <h3>Frontend</h3>
+                        </header>
+                        <ul class="skill-panel__list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>React</li>
+                            <li>TypeScript</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="educacion" class="section section-reveal">
+            <div class="container">
+                <header class="section__head">
+                    <span class="section__index">05</span>
+                    <h2 class="section__title">Educación</h2>
+                </header>
+                <div class="edu-block">
+                    <h3 class="edu-block__title">Estudios</h3>
+                    <ul class="edu-list">
+                        <li>
+                            <div>
+                                <strong>Ingeniería de Software</strong>
+                                <span>Politécnico Grancolombiano · 2023 — 2026</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <strong>Inglés</strong>
+                                <span>Universidad Nacional de Colombia · En curso</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <strong>Análisis y Desarrollo de Sistemas de Información</strong>
+                                <span>SENA · 2020 — 2022</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <strong>Diplomado en Ciencias de la Computación</strong>
+                                <span>Politécnico Grancolombiano</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="edu-block">
+                    <h3 class="edu-block__title">Certificaciones</h3>
+                    <ul class="edu-list">
+                        <li>
+                            <div>
+                                <strong>PCEP — Programming Essentials in Python</strong>
+                                <span>Python Institute</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <strong>Bootcamp Arquitectura en la Nube</strong>
+                                <span>Bogotá Institute of Technology (BIT)</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section section-reveal">
+            <div class="container">
+                <header class="section__head">
+                    <span class="section__index">06</span>
+                    <h2 class="section__title">Contacto</h2>
+                </header>
+                <p class="lead">¿Proyecto o vacante? Escríbeme.</p>
+                <ul class="contact-list">
+                    <li><a href="mailto:j.guillen.0612@gmail.com"><i class="fa-solid fa-envelope"></i>
+                            j.guillen.0612@gmail.com</a></li>
+                    <li><a href="tel:+573124541612"><i class="fa-solid fa-phone"></i> (+57) 312 454 1612</a></li>
+                    <li><a href="https://www.linkedin.com/in/jean-paul-12qg/" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a></li>
+                    <li><a href="https://github.com/Jean-Paul-12" target="_blank" rel="noopener noreferrer"><i
+                                class="fa-brands fa-github"></i> GitHub</a></li>
+                    <li><a href="components/cv/CV Jean Paul Quitian.pdf" download><i class="fa-solid fa-file-pdf"></i>
+                            Descargar CV</a></li>
+                </ul>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="footer__contact">
-            <a href="mailto:j.guillen.0612@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
-                <span>j.guillen.0612@gmail.com</span>
-            </a>
-            <a href="tel:+573124541612">
-                <i class="fa-solid fa-phone"></i>
-                <span>(+57) 312 454 1612</span>
-            </a>
-        </div>
-        <div class="footer__icons">
-            <a href="https://github.com/Jean-Paul-12" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/jean-paul-12qg/" target="_blank" rel="noopener noreferrer"
-                aria-label="LinkedIn">
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="mailto:j.guillen.0612@gmail.com" aria-label="Email">
-                <i class="fa-solid fa-envelope"></i>
-            </a>
-        </div>
-        <p class="footer__copy">Jean Paul Quitian &copy; 2026 · <a href="https://jeanp-quitian.vercel.app">jeanp-quitian.vercel.app</a></p>
+        <p>Jean Paul Quitian · Software Engineer · <a href="https://jeanp-quitian.vercel.app">jeanp-quitian.vercel.app</a>
+        </p>
     </footer>
 
-    <button class="scroll-top" aria-label="Volver arriba">
-        <i class="fa-solid fa-chevron-up"></i>
-    </button>
+    <button class="scroll-top" aria-label="Volver arriba"><i class="fa-solid fa-chevron-up"></i></button>
 
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="scripts/neural-bg.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/role-rotate.js"></script>
+    <script src="scripts/console-agent.js"></script>
+    <script src="scripts/animations.js"></script>
 </body>
 
 </html>
