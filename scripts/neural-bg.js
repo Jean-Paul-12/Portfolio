@@ -6,22 +6,28 @@
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const CONFIG = {
-        nodeCount: 58,
+        nodeCount: 48,
         maxDistance: 175,
-        lineOpacity: 0.14,
-        nodeOpacity: 0.35,
-        speed: 0.18,
-        colors: [
-            [56, 189, 248],
-            [129, 140, 248],
-            [148, 163, 184],
-        ],
+        lineOpacity: 0.1,
+        nodeOpacity: 0.28,
+        speed: 0.16,
     };
+
+    function readThemeColors() {
+        const style = getComputedStyle(document.documentElement);
+        const parse = (name) => {
+            const raw = style.getPropertyValue(name).trim();
+            if (!raw) return [56, 189, 248];
+            return raw.split(',').map((n) => parseInt(n.trim(), 10));
+        };
+        return [parse('--neural-a'), parse('--neural-b'), [148, 163, 184]];
+    }
 
     let nodes = [];
     let width = 0;
     let height = 0;
     let animationId = null;
+    let colors = readThemeColors();
 
     function rgba(rgb, alpha) {
         return `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, ${alpha})`;
@@ -35,13 +41,14 @@
     }
 
     function createNodes() {
+        colors = readThemeColors();
         nodes = Array.from({ length: CONFIG.nodeCount }, () => ({
             x: Math.random() * width,
             y: Math.random() * height,
             vx: (Math.random() - 0.5) * CONFIG.speed,
             vy: (Math.random() - 0.5) * CONFIG.speed,
             radius: Math.random() * 1.2 + 0.8,
-            color: CONFIG.colors[Math.floor(Math.random() * CONFIG.colors.length)],
+            color: colors[Math.floor(Math.random() * colors.length)],
         }));
     }
 
@@ -107,6 +114,12 @@
         resize();
         createNodes();
         if (reducedMotion) draw();
+    });
+
+    document.addEventListener('click', (e) => {
+        if (e.target.matches('[data-theme-set]')) {
+            setTimeout(createNodes, 50);
+        }
     });
 
     init();
