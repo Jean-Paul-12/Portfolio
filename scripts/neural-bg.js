@@ -5,8 +5,13 @@
     const ctx = canvas.getContext('2d');
     const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+    function getNodeCount() {
+        if (window.innerWidth < 480) return 26;
+        if (window.innerWidth < 768) return 34;
+        return 48;
+    }
+
     const CONFIG = {
-        nodeCount: 48,
         maxDistance: 175,
         lineOpacity: 0.1,
         nodeOpacity: 0.28,
@@ -42,7 +47,7 @@
 
     function createNodes() {
         colors = readThemeColors();
-        nodes = Array.from({ length: CONFIG.nodeCount }, () => ({
+        nodes = Array.from({ length: getNodeCount() }, () => ({
             x: Math.random() * width,
             y: Math.random() * height,
             vx: (Math.random() - 0.5) * CONFIG.speed,
@@ -114,12 +119,6 @@
         resize();
         createNodes();
         if (reducedMotion) draw();
-    });
-
-    document.addEventListener('click', (e) => {
-        if (e.target.matches('[data-theme-set]')) {
-            setTimeout(createNodes, 50);
-        }
     });
 
     init();

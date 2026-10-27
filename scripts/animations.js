@@ -14,7 +14,7 @@
         delay: 0.1,
     });
 
-    gsap.from('.hero__panel', {
+    gsap.from('.hero__console-stage', {
         opacity: 0,
         x: 32,
         duration: 0.9,
